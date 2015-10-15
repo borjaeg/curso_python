@@ -1,0 +1,34 @@
+# Instalar python 3
+conda install python = 3
+export PYTHONPATH="/usr/local/lib/python3.3/site-packages"
+
+# No switch statement
+- PEP3103 for in-depth discussion
+
+# Show
+echo 'print "hello world"' | ./python
+
+# Exersices
+0. Bucle con variable
+1. Adivinanza en 10 intentos con solución opcional
+2. Adivinar el número aleatorio
+3. ¿Abrir un fichero es algo tan sencillo?
+4. Añadir a nuestro mini-linux la funcionalidad de fecha
+5. Crear nueva excepción heredando de la clase Exception y 
+   probar en otro fichero dicha excepción
+6. Comprehension List
+	- NLP
+	- Temperature conversion
+7. Functional programming: filter fibonacci sequence
+
+# Project
+1. Riddle app
+
+# Talk about...
+docstrings
+
+# Install mysql library
+pip install MySQL-python
+
+# Test user created exists
+SELECT host, user FROM mysql.user;

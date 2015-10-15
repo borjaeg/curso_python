@@ -1,0 +1,5 @@
+#!/usr/bin/python
+
+#sudo chmod u+x 2_hello_world
+
+print "hello world"
