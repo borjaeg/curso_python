@@ -34,6 +34,8 @@ echo 'print "hello world"' | ./python
 
 # Project
 1. Riddle app
+	- Que no repitan las adivinanzas
+	- Jugadores y puntuaciones
 
 # Talk about...
 docstrings
