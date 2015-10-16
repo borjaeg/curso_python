@@ -1,28 +1,33 @@
+# -*- coding: utf-8 -*-
 import os
-import MySQLdb as mdb
+import pymysql.cursors
 import codecs
 
 path = 'adivinanzas'
 
-try: 
-  con = mdb.connect('localhost', 'curso_dlabs', 'pass_curso_dlabs', 'curso_dlabs')
+connection = pymysql.connect(host='localhost',
+           user = 'curso_dlabs',
+           password = 'pass_curso_dlabs',
+           db = 'curso_dlabs',
+           charset = 'utf8')
 
-  for file in os.listdir(path):
-    with codecs.open(path + os.path.sep + file, 'r', 'utf-8') as f:
-      adivinanza = f.readline().strip()
-      solucion = f.readline().strip()
-      print adivinanza
-      print solucion
-      cur = con.cursor()
-      cur.execute("INSERT INTO adivinanzas(texto, solucion) VALUES (%s, %s)", (adivinanza, solucion))
-      con.commit()
+try: 
+  with connection.cursor() as cursor:
+    for file in os.listdir(path):
+      with codecs.open(path + os.path.sep + file, 'r', 'utf-8') as f:
+        adivinanza = f.readline().strip()
+        solucion = f.readline().strip()
+        print adivinanza
+        print solucion
+        cursor.execute("INSERT INTO adivinanzas(texto, solucion) VALUES (%s, %s)", (adivinanza, solucion))
+        connection.commit()
 
 except Exception as e:
-  if con:
-    con.rollback()
+  if connection:
+    connection.rollback()
     print "Se ha producido un error"
     print e.args[1]
 
 finally:
-  if con:
-    con.close()
+  if connection:
+    connection.close()
