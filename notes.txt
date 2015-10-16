@@ -8,6 +8,7 @@
 # Virtualenv
 * http://rukbottoland.com/blog/tutorial-de-python-virtualenv/
 * http://rukbottoland.com/blog/como-instalar-paquetes-python-con-requirementstxt/
+* https://coddswallop.wordpress.com/2014/02/28/installing-a-virtualenv-when-python-2-and-3-are-both-installed/
 
 # Pip
 * http://rukbottoland.com/blog/como-instalar-un-paquete-python-con-pip/
