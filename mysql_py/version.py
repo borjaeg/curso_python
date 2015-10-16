@@ -9,11 +9,12 @@ connection = pymysql.connect(host='localhost',
 
 try:
   with connection.cursor() as cursor:
-    sql = "SELECT * FROM escritores"
+    sql = "SELECT VERSION()"
     cursor.execute(sql)
-    rows = cursor.fetchall()
-    for row in rows:
-      print row
+    
+    result = cursor.fetchone()
+    
+    print "Version de la base de datos %s" % result
 
 except Exception as e:
   connection.rollback()

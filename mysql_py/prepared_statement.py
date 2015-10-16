@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import pymysql.cursors
 
 # Connect to the database
@@ -9,14 +10,16 @@ connection = pymysql.connect(host='localhost',
 
 try:
   with connection.cursor() as cursor:
-    sql = "SELECT * FROM escritores"
-    cursor.execute(sql)
-    rows = cursor.fetchall()
-    for row in rows:
-      print row
+    sql = "UPDATE escritores SET nombre = %s WHERE nombre LIKE %s"
+    cursor.execute(sql, ("Mario Vargas Llosa", "%balzac%"))
+
+    print "Número de filas actualizadas: ", cursor.rowcount
+    
+    connection.commit()
 
 except Exception as e:
   connection.rollback()
+  print "Error %s" % e.args[1]
 
 finally:
   connection.close()
