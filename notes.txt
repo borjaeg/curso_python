@@ -1,6 +1,9 @@
 # Instalar python windows
 * http://docs.python-guide.org/en/latest/starting/install/win/
 
+# Versión de Python
+* python -V
+
 # Instalar python 3
 * conda install python = 3
 * export PYTHONPATH="/usr/local/lib/python3.3/site-packages"
