@@ -10,6 +10,9 @@
 * http://rukbottoland.com/blog/como-instalar-paquetes-python-con-requirementstxt/
 * https://coddswallop.wordpress.com/2014/02/28/installing-a-virtualenv-when-python-2-and-3-are-both-installed/
 
+# Instalar desde el fichero requirements.txt
+* pip install -r /path/to/requirements.txt
+
 # Python 3 Strings/Bytes
 * http://eli.thegreenplace.net/2012/01/30/the-bytesstr-dichotomy-in-python-3
 * http://www.diveintopython3.net/strings.html
@@ -46,7 +49,9 @@ echo 'print "hello world"' | ./python
 docstrings
 
 # Install mysql library
-pip install MySQL-python
+pip install MySQL-python (deprecated)
+pip install PyMySQL
+
 
 # Test user created exists
 SELECT host, user FROM mysql.user;
