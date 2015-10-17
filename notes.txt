@@ -10,6 +10,10 @@
 * http://rukbottoland.com/blog/como-instalar-paquetes-python-con-requirementstxt/
 * https://coddswallop.wordpress.com/2014/02/28/installing-a-virtualenv-when-python-2-and-3-are-both-installed/
 
+# Python 3 Strings/Bytes
+* http://eli.thegreenplace.net/2012/01/30/the-bytesstr-dichotomy-in-python-3
+* http://www.diveintopython3.net/strings.html
+
 # Pip
 * http://rukbottoland.com/blog/como-instalar-un-paquete-python-con-pip/
 * http://stackoverflow.com/questions/4750806/how-to-install-pip-on-windows
@@ -20,7 +24,7 @@
 # Show
 echo 'print "hello world"' | ./python
 
-# Exersices
+# Exercises
 0. Bucle con variable
 1. Adivinanza en 10 intentos con solución opcional
 2. Adivinar el número aleatorio
