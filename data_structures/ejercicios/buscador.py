@@ -13,5 +13,4 @@ while True:
     i +=1
   
   exito = raw_input("Acceder a: ")
-  print type(respuestas[int(exito)])
   print urllib2.urlopen(str(respuestas[int(exito)])).read()
