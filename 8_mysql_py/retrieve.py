@@ -16,7 +16,7 @@ try:
       print row
 
 except Exception as e:
-  connection.rollback()
+  print str(e)
 
 finally:
   connection.close()

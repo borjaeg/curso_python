@@ -20,7 +20,8 @@ try:
 
 except Exception as e:
 	connection.rollback()
-	print "Error %s" % e.args[0]
+	print "Error"
+	print str(e)
 
 finally:
 	connection.close()

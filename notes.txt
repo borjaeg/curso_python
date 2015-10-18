@@ -13,6 +13,9 @@
 * http://rukbottoland.com/blog/como-instalar-paquetes-python-con-requirementstxt/
 * https://coddswallop.wordpress.com/2014/02/28/installing-a-virtualenv-when-python-2-and-3-are-both-installed/
 
+# Exceptions
+traceback module provides methods for formatting and printing exceptions and their tracebacks
+
 # Instalar desde el fichero requirements.txt
 * pip install -r /path/to/requirements.txt
 
@@ -23,6 +26,9 @@
 # Pip
 * http://rukbottoland.com/blog/como-instalar-un-paquete-python-con-pip/
 * http://stackoverflow.com/questions/4750806/how-to-install-pip-on-windows
+
+# Modify variables Mysql
+* SET {variable} = {value};
 
 # No switch statement
 * PEP3103 for in-depth discussion

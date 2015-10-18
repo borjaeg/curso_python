@@ -9,7 +9,7 @@ connection = pymysql.connect(host='localhost',
 
 try:
   with connection.cursor() as cursor:
-    sql = "SELECT VERSION()"
+    sql = "SELEC VERSION()"
     cursor.execute(sql)
     
     result = cursor.fetchone()
@@ -17,7 +17,8 @@ try:
     print "Version de la base de datos %s" % result
 
 except Exception as e:
-  connection.rollback()
+  print "Se ha producido un error"
+  print str(e)
 
 finally:
   connection.close()
