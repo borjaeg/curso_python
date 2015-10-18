@@ -16,6 +16,9 @@
 # Exceptions
 traceback module provides methods for formatting and printing exceptions and their tracebacks
 
+# Scraping
+* pip install beautifulsoup4
+
 # Instalar desde el fichero requirements.txt
 * pip install -r /path/to/requirements.txt
 
