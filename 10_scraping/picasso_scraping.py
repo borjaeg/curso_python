@@ -10,7 +10,6 @@ soup = BeautifulSoup(html, 'html.parser')
 imgs = soup.findAll('img', src = True)
 for img in imgs:
   print img['src']
-  print img['alt']
   name = img['src'].split('/')[-1]
   print name
   image = open(name, "wb")

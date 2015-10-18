@@ -13,6 +13,9 @@
 * http://rukbottoland.com/blog/como-instalar-paquetes-python-con-requirementstxt/
 * https://coddswallop.wordpress.com/2014/02/28/installing-a-virtualenv-when-python-2-and-3-are-both-installed/
 
+# Mysql Users
+* select host, user, password from mysql.user;
+
 # Exceptions
 traceback module provides methods for formatting and printing exceptions and their tracebacks
 
