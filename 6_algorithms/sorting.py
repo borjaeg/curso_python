@@ -19,7 +19,7 @@ def insertion_sort(items):
 			items[j], items[j-1] = items[j-1], items[j]
 			j -= 1
 
-random_items = [random.randint(-50,100) for c in range(5000)]
+random_items = [random.randint(-50,100) for c in range(1000000)]
 
 import time
 
@@ -30,7 +30,7 @@ bubble_sort(random_items)
 end_time = time.time()
 secs = end_time - start_time * 1.0
 
-random_items = [random.randint(-50,100) for c in range(5000)]
+random_items = [random.randint(-50,100) for c in range(1000000)]
 start_time_b = time.time()
 
 insertion_sort(random_items)
@@ -38,7 +38,7 @@ insertion_sort(random_items)
 end_time_b = time.time()
 secs_b = end_time_b - start_time_b * 1.0
 
-random_items = [random.randint(-50,100) for c in range(5000)] #1000000
+random_items = [random.randint(-50,100) for c in range(1000000)] #1000000
 start_time_c = time.time()
 
 random_items.sort()

@@ -10,6 +10,7 @@ try:
 	with connection.cursor() as cursor:
 		cursor.execute("DROP TABLE IF EXISTS escritores")
 		cursor.execute("CREATE TABLE escritores(id_escritor INT UNSIGNED PRIMARY KEY AUTO_INCREMENT, nombre VARCHAR(25))")
+		connection.commit()
 		cursor.execute("INSERT INTO escritores(nombre) VALUES ('Franz Kafka')")
 		cursor.execute("INSERT INTO escritores(nombre) VALUES ('William Shakespeare')")
 		cursor.execute("INSERT INTO escritores(nombre) VALUES ('Honore de Balzac')")

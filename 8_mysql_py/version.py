@@ -9,7 +9,7 @@ connection = pymysql.connect(host='localhost',
 
 try:
   with connection.cursor() as cursor:
-    sql = "SELEC VERSION()"
+    sql = "SELECT VERSION()"
     cursor.execute(sql)
     
     result = cursor.fetchone()

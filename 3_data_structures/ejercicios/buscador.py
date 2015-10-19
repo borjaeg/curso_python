@@ -5,9 +5,8 @@ indice = {"deportes": ["http://marca.com", "http://as.com", "http://sport.es"],
 	  "programacion": ["http://python.org", "http://java.com"]}
 
 
-
 while True:
-  busqueda = raw_input("Buscar: ")
+  busqueda =  raw_input("Buscar: ")
   i = 0
   respuestas = indice[busqueda]
   for resultado in respuestas:
